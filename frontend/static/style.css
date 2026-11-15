@@ -1,0 +1,180 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #f4f6fa;
+  color: #1c2430;
+  line-height: 1.6;
+  margin: 0;
+}
+
+header {
+  background-color: #0c5449;
+  color: white;
+  text-align: center;
+  padding: 24px 16px 8px 16px;
+}
+
+header h1 {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+nav a:hover {
+  background-color: #ffc72c;
+  color: #0c5449;
+}
+
+main {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #d6dce6;
+  border-radius: 6px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+article {
+  background-color: #f4f6fa;
+  border: 1px solid #d6dce6;
+  border-radius: 6px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  font-family: Arial, sans-serif;
+  color: #0c5449;
+}
+
+h2 {
+  border-bottom: 2px solid #ffc72c;
+  padding-bottom: 4px;
+}
+
+a {
+  color: #0b6bcb;
+}
+
+a:hover {
+  color: #ba3a00;
+}
+
+ul, ol {
+  padding-left: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figure {
+  float: right;
+  margin: 0 0 16px 16px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 13px;
+  color: #5b6573;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+th, td {
+  border: 1px solid #d6dce6;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0c5449;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f6fa;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+  color: #5b6573;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #0c5449;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc72c;
+  color: #0c5449;
+}
+
+/* Forms */
+.auth-box {
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 4px 0 12px 0;
+  border: 1px solid #d6dce6;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.error {
+  color: #ba3a00;
+  font-weight: bold;
+}

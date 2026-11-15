@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ title }} | Campus Lost and Found{% endblock %}
+
+{% block content %}
+<section class="auth-box">
+  <h2>{{ title }}</h2>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form method="post">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" required>
+    <button type="submit">{{ title }}</button>
+  </form>
+  <p><a href="{{ other_url }}">{{ other_text }}</a></p>
+</section>
+{% endblock %}
