@@ -5,11 +5,11 @@ Web app for posting and finding lost items on campus. Python (Flask), MySQL on A
 ## Folders
 | Folder | What goes here | Who |
 |---|---|---|
-| `backend/` | Flask app (`main.py`): routes, login, database code | Reuben |
-| `frontend/` | `templates/` (HTML) and `static/` (CSS, JS, images) | Frontend team |
-| `database/` | Schema and seed SQL | Jamar |
-| `tests/` | Test scripts | Areeba |
-| `docs/` | Report, diagrams | Everyone |
+| `backend/` | Flask app (`main.py`): routes, login, database code |
+| `frontend/` | `templates/` (HTML) and `static/` (CSS, JS, images) | 
+| `database/` | Schema and seed SQL |
+| `tests/` | Test scripts |
+| `docs/` | Report, diagrams |
 
 ## Run locally
 ```
