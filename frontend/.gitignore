@@ -1,0 +1,22 @@
+# Python bytecode and cache
+__pycache__/
+*.pyc
+
+# Python virtual environments
+venv/
+env/
+ENV/
+
+# Local SQLite databases (if testing locally)
+instance/
+*.db
+
+# VS Code / Visual Studio workspace settings
+.vs/
+.vscode/
+*.suo
+*.user
+
+# Operating system junk files
+.DS_Store
+Thumbs.db 

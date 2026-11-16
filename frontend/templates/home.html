@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
+    <meta charset="UTF-8">
+    <title>Campus Lost & Found - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>Home</h1>
-  <p>Signed in as {{ user.email }}</p>
-  <p><a href="{{ url_for('logout') }}">Log out</a></p>
+    <header>
+        <h1>Campus Lost & Found</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('browse') }}">Browse Items</a>
+            <a href="{{ url_for('report') }}">Report Item</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        </nav>
+    </header>
+    <div class="container" style="text-align: center;">
+        {% include "_flash.html" %}
+        <h2>Lost Something on Campus? Found Someone's Belongings?</h2>
+        <p>Use this portal to quickly report lost or found items and reconnect with fellow students.</p>
+        <div style="margin-top: 25px;">
+            <a href="{{ url_for('report') }}"><button>Report a Lost/Found Item</button></a>
+            <a href="{{ url_for('browse') }}" style="margin-left: 10px;"><button>Browse All Listings</button></a>
+        </div>
+    </div>
 </body>
 </html>

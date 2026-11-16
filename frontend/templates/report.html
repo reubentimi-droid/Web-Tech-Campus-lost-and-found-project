@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Item - Campus Lost & Found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Campus Lost & Found</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('report') }}">Report Item</a>
+        </nav>
+    </header>
+    <div class="container">
+        {% include "_flash.html" %}
+        <h2>Report a Lost or Found Item</h2>
+        <form action="/report" method="POST">
+            <label for="type">Item Status:</label>
+            <select id="type" name="type" required>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <label for="title">Item Title:</label>
+            <input type="text" id="title" name="title" placeholder="e.g., Blue Hydro Flask" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" placeholder="e.g., Electronics, Bottles, Keys" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" placeholder="Provide details..." required></textarea>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Student Center Library" required>
+
+            <label for="item_date">Date:</label>
+            <input type="date" id="item_date" name="item_date" required>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+</body>
+</html>
